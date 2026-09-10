@@ -1,0 +1,31 @@
+==================================================
+JAVASCRIPT EQUALITY: == vs ===
+==================================================
+
+1. THE OPERATORS:
+-----------------
+=   : Assignment (assigns a value to a variable)
+==  : Loose Equality (checks value WITH type coercion)
+=== : Strict Equality (checks value and type WITHOUT coercion)
+
+
+2. EXAMPLES:
+------------
+
+Example 1: Number vs String
+- 5 == "5"   // true (string "5" is converted to number 5)
+- 5 === "5"  // false (number and string are different types)
+
+Example 2: Boolean vs Number
+- 0 == false   // true (boolean false is converted to number 0)
+- 0 === false  // false (number and boolean are different types)
+
+
+3. BEST PRACTICE:
+-----------------
+Always use `===` (strict equality) to prevent bugs caused by 
+unexpected automatic type conversions in JavaScript.
+==================================================
+
+== checks if values in the expression could possibly be equal with type coercion
+=== is strict equality, as is expected from traditional programming.
