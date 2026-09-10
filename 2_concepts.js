@@ -32,13 +32,13 @@ console.log(obj1.name); // "Bob" (changed!)
 //null vs undefined
 
 // undefined: when js handles a var say that isnt initialized
-let score;
-console.log(typeof score); //undefined
+let score;              
+console.log(typeof score); //undefined                    //Unintenional, as js assigns undefinied type
 
 // null:      we intentionally want a var to not have  a val
 
 let user = "bob";
-user = null;
+user = null;                                                         //Intentional
 console.log(user); //null  //we can directly assign null to var as well ie: let user = null
 
 
