@@ -1,3 +1,8 @@
+//By Objects,we refer to all stuff that isn't Primitive data type. 
+//object literals are the js dictionaries.
+
+//break and continue only work on loops, use return to halt a function mid-while
+
 //Pass by reference:
 // Behavior: When you assign an object or array to a new variable, you are copying the address (the reference) to where
 // that data lives in memory, not the data itself. If you modify the data through one variable, it affects both because
@@ -18,7 +23,7 @@ console.log(obj1.name); // "Bob" (changed!)
 // "" (empty string, using single, double, or backtick quotes)
 // null (intentional absence of value
 // undefined (uninitialized or missing value)
-// NaN (Not-a-Number)
+// NaN (Not-a-Number)                        //When?: Ex: parseInt("abc4") #Not=a-number
 
 
 // Truthy Values

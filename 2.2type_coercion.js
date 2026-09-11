@@ -33,10 +33,22 @@
 //* To Number: Use Number(), parseInt(), or parseFloat().
 //  Example: 
   const str = "45.6";
-  const nums = Number(str); // 45.6
+  const nums = Number(str); // 45.6  //These work till they encounter first non-number
   const intNum = parseInt(str); // 45
 
+
+
 // * To Boolean: Use Boolean() or the double NOT operator (!!).
+// ! is the NOT operstor. If u print a valid truthy value, it'll output as false if ! used.
+// !! makes result same as original,as its equivalent of twice NOT operator.
+
+let name = "";
+console.log(name);//false
+console.log(!name);//true
+console.log(!!name);//false   //!! always yields same as original 
+
+
+
 //   Example: 
   const vall = "hello";
   const isTrue = Boolean(val); // true

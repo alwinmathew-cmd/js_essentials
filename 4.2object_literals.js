@@ -52,7 +52,7 @@ const {
 
 console.log(lname, city, secondhobby);
 
-//Selectively taking out certain keys,works only for object, array-destructrring doesnt have that liberty,
+//Selectively taking out certain keys,works only for object literals, array-destructrring doesnt have that liberty,
 //  as there are no keys.
 // So we've to write as many variables so as to mimic originial count, ofc default values exist, so they could increase
 //count of variables

@@ -44,3 +44,78 @@ let userStatus = (age >= 18) ? "Adult" : "Minor"; // "Adult"
 // Used to check data types.
 let checkString = typeof "Hello"; // "string"
 let checkNumber = typeof 42;      // "number"
+
+
+//8:  in operator--checks key exists in object liertal and if index exists in array, not the values!
+
+  //8.1:Using in with Objects (Most Common)When used with standard objects, the in operator checks for property keys (names),
+  //  not the property values
+
+  const fruitss = ["apple", "banana", "orange"];
+
+// Checking for valid index positions (0, 1, 2)
+console.log(0 in fruitss);       // true (fruits[0] exists)
+console.log(2 in fruitss);       // true (fruits[2] exists)
+console.log(5 in fruitss);       // false (index 5 does not exist)
+
+// ⚠️ Warning: Checking for values will fail!
+console.log("apple" in fruitss); // false ("apple" is a value, not an index)
+
+// Checking for built-in array properties
+console.log("length" in fruitss); // true (arrays have a .length property)
+
+
+
+//8.2Using in with Arrays (Common Misconception)When used with arrays, the in operator checks for index numbers or 
+// built-in properties, NOT the actual values inside the array
+
+const fruits = ["apple", "banana", "orange"];
+
+// Checking for valid index positions (0, 1, 2)
+console.log(0 in fruits);       // true (fruits[0] exists)
+console.log(2 in fruits);       // true (fruits[2] exists)
+console.log(5 in fruits);       // false (index 5 does not exist)
+
+// ⚠️ Warning: Checking for values will fail!
+console.log("apple" in fruits); // false ("apple" is a value, not an index)
+
+// Checking for built-in array properties
+console.log("length" in fruits); // true (arrays have a .length property)
+
+
+
+
+
+//9 spread & rest operators: both have "..." as their sign Ex:...arr1 ie, three dots followed by a variable
+
+// Spread Example 1: Combining arrays //basically unpacking happening
+const arr1 = [1, 2];
+const combined = [...arr1, 3, 4];
+console.log(combined); // [1, 2, 3, 4]
+
+// Spread Example 2: Expanding object properties into a new object
+const user = { name: 'Alice', age: 25 };
+const updatedUser = { ...user, location: 'New York' };
+console.log(updatedUser); // { name: 'Alice', age: 25, location: 'New York' }
+
+
+
+// Rest Example 1: Collecting remaining function arguments into an array
+function sum(first, ...remaining) {
+  return remaining.reduce((acc, val) => acc + val, first);
+}
+console.log(sum(10, 20, 30)); // 60
+
+// Rest Example 2: Collecting remaining elements during array destructuring
+const colors = ['red', 'green', 'blue', 'yellow'];
+const [primary, ...otherColors] = colors;
+console.log(otherColors); // ['green', 'blue', 'yellow']
+
+//**Quick Rule for `...**`
+
+// * **Spread (Unpacks):
+// ** Appears on the **right-side** of an assignment, inside a function call, or inside a literal to expand elements outward.
+
+// * **Rest (Packs):
+// ** Appears on the **left-side** of an assignment or in function parameter lists to collect remaining elements inward 
+// into an array.
