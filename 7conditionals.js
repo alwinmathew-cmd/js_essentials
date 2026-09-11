@@ -43,3 +43,5 @@ switch (trafficLight) {
   default:
     console.log("Unknown light color.");
 }
+
+//break and continue only work in loops

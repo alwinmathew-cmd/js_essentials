@@ -42,8 +42,67 @@ console.log(typeof score); //undefined                    //Unintenional, as js 
 
 // null:      we intentionally want a var to not have  a val
 
-let user = "bob";
+let uuser = "bob";
 user = null;                                                         //Intentional
-console.log(user); //null  //we can directly assign null to var as well ie: let user = null
+console.log(uuser); //null  //we can directly assign null to var as well ie: let user = null
 
 
+
+
+
+//this keyword:
+
+
+// 1. INSIDE AN object method
+// 'this' points to the object that owns the method.
+const user = {
+  name: "Alex",
+  greet: function() {
+    console.log(`Hello, my name is ${this.name}`);
+  }
+};
+user.greet(); // Output: Hello, my name is Alex
+
+// --------------------------------------------------
+
+// 2. IN A REGULAR STANDALONE FUNCTION
+// 'this' defaults to the global window object (or undefined in strict mode).
+function showThis() {
+  console.log(this);
+}
+showThis(); // Output: Window object
+
+// --------------------------------------------------
+
+// 3. INSIDE A CONSTRUCTOR FUNCTION
+// 'this' points to the brand-new object instance created by the 'new' keyword.
+function Person(name) {
+  this.name = name; 
+}
+const person1 = new Person("Emma");
+console.log(person1.name); // Output: Emma
+
+// --------------------------------------------------
+
+// 4. INSIDE AN ARROW FUNCTION
+// Arrow functions do not have their own 'this'. They inherit it from the outer scope(globally, theres no name var, thats why)
+const character = {
+  name: "Leo",
+  greet: () => {
+    console.log(`Hello, my name is ${this.name}`);
+  }
+};
+character.greet(); // Output: Hello, my name is undefined
+
+
+
+
+
+
+//Some daily used math methods
+
+Math.round(), Math.abs(), Math.ceil(), Math.floor(), Math.sqrt(),  Math.pow()/num**2
+
+//JSON.stringify()  : JSON-ifies any value 
+
+//JSON.parse() : opposite of above method, unpacks any JSON value to a js object, or primitive value.

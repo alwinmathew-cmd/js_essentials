@@ -38,7 +38,8 @@ points--; // points is back to 5
 // 6. Ternary Operator
 // A shorthand for an if-else statement: condition ? valueIfTrue : valueIfFalse
 let age = 20;
-let userStatus = (age >= 18) ? "Adult" : "Minor"; // "Adult"
+let userStatus = (age >= 18) ? "Adult" : "Minor"; // "Adult"         //while more than 2 conds is possible with nesting,
+//it becomes less readable and makes an if-else if-else more prreferred,
 
 // 7. Type Operators
 // Used to check data types.
