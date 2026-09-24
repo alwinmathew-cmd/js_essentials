@@ -31,3 +31,21 @@ const sum_val = (n1=5,n2=4.5) => Math.round(n1+n2);
 console.log(sum_val());
 
 
+
+//u can also have  anamless function, example in a fn, u can 
+
+//return function(){
+//   console.log("hehe")};
+
+
+//u can also do this:
+function greet() { //greet is a Higher Order fn here
+  return function() {
+    return "Hello, World!";
+  };
+}
+
+let val = greet(); // `val` now holds the returned function reference
+
+console.log(val()); // "Hello, World!" -> executes the reference
+

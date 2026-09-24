@@ -3,7 +3,7 @@
 
 //perfect choice for inline operations like .map() and .filter() and also with arrays
 
-//Not meant for cinstructors,object literals and event listeners
+//Not meant for constructors,object literals and event listeners
 
 //1. Simple example - No parameters:
 

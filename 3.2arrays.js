@@ -13,7 +13,7 @@ console.log(usernames) //[ 'Alice', 'Bob' ]
 
 const numbers = [12,23,44,55,78,99]
 const even_nos = numbers.filter(num => num%2===0)
-console.log(even_nos) // [ 12, 44, 78 
+console.log(even_nos) // [ 12, 44, 78 ]
 
 
 //3)read MDN docs for more

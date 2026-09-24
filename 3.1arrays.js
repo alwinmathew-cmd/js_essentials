@@ -16,7 +16,7 @@ console.log(fruits);
 
 
 //2.To add/remove array elements at certain index, we use .splice() //We can choose to add/remove more than 1 element
-//This is aligned more to remove logic\
+//This is aligned more to remove logic
 //Array manipulation.
 
 // Start at index 0, remove 1 element
@@ -48,7 +48,7 @@ console.log(val); //true
 
 //4.Some more methods: .at()
 //For fetching element from rear (-ve index also supported), we can use .at()
-//Essentially fetches a siongle element, same as fruits[2], except fruits[-2] can also be done
+//Essentially fetches a single element, same as fruits[2], except fruits[-2] can also be done
 //can be sud on arrays,strings
 
 let colors = ["yellow","green","red"];
@@ -62,15 +62,15 @@ console.log(fname.at(-3));  // m
 
 
 
-//5. .slice() - Does not mutate the array/string, justr gives us a shallow slice copy of original entity
+//5. .slice() - Does not mutate the array/string, just gives us a shallow slice copy of original entity
 
 //Gives us a slice of the original entity, while not modifying the original entity
 //Works on arrays and strings
 //Similar to slicing in python:
 
-//var.slcie(start,end) --> needs 2 parameters, ie start and end(exclsuive): tahts ur slice
+//var.slice(start,end) --> needs 2 parameters, ie start and end(exclsuive): thats ur slice
 //var.slice(start) --> one parameter: just start. From Start to last element, that shallow copy.
-//var.slice() --> no apara. Whole array/string as a shallow copy.
+//var.slice() --> no para. Whole array/string as a shallow copy.
 
 let animals = ['lion','zebra','tiger','snake']
 

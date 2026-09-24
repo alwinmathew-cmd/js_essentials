@@ -2,12 +2,12 @@
 // outside code cannot see or change them -- can be instance field(non-static) or static. 
 
 //The private field(#) name u mention as a non-static class field (non-static preferred)
-// that name must excatly match the name of the attribute in constructor.
+// that name must exactly match the name of the attribute in constructor.
 
 
 
 //Simple class, with constructor function
-//add-ons: object(dict) destruccturing done for constructor paras and for fn_call, to support keyword args
+//add-ons: object(dict) destructuring done for constructor paras and for fn_call, to support keyword args
 //1.
 
 class Person{

@@ -98,6 +98,33 @@ character.greet(); // Output: Hello, my name is undefined
 
 
 
+//u can also do this:
+function greet() {    //greet is a Higher Order fn here
+  return function() {
+    return "Hello, World!";
+  };
+}
+
+let val = greet(); // `val` now holds the returned function reference
+
+console.log(val()); // "Hello, World!" -> executes the reference
+
+
+//Above example with Closure:
+function createGreeter(greeting) {
+  // The outer function returns an anonymous function
+  return function(name) {
+    return `${greeting}, ${name}!`;
+  };
+}
+
+// `sayHello` becomes the inner function, remembering `greeting = "Hello"`
+let sayHello = createGreeter("Hello");
+
+console.log(sayHello("Alice")); // "Hello, Alice!"
+console.log(sayHello("Bob"));   // "Hello, Bob!"
+
+
 
 //Some daily used math methods
 

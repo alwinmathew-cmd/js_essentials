@@ -1,7 +1,7 @@
 //js dictionaries- key:value pairs
 //keys must be unique, keys are mutable
 //values can be anything
-//object keys are alays type coerced into strings.
+//object keys are always type coerced into strings.
 
 const person = {
   fname: "John",
@@ -41,7 +41,7 @@ console.log(keys);
 //Fetching all keys and values in an array,where each pair is a nested array:
 console.log(Object.entries(person));
 
-//object Destructuring:puling properties out of object literal to be used directly
+//object Destructuring:Pulling properties out of object literal to be used directly, as ref var's
 
 //We write object keys, selectively those, that we need to reuse directly
 const {

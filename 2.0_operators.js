@@ -88,7 +88,7 @@ console.log("length" in fruits); // true (arrays have a .length property)
 
 
 //9 spread & rest operators: both have "..." as their sign Ex:...arr1 ie, three dots followed by a variable
-
+//spread always needs same ref var name to be used
 // Spread Example 1: Combining arrays //basically unpacking happening
 const arr1 = [1, 2];
 const combined = [...arr1, 3, 4];
@@ -100,7 +100,7 @@ const updatedUser = { ...user, location: 'New York' };
 console.log(updatedUser); // { name: 'Alice', age: 25, location: 'New York' }
 
 
-
+//rest doenst use same ref var name 
 // Rest Example 1: Collecting remaining function arguments into an array
 function sum(first, ...remaining) {
   return remaining.reduce((acc, val) => acc + val, first);

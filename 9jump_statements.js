@@ -32,7 +32,7 @@ try {
 }
 
 
-//catch block in js can only handle one variable, which is taken as error, whihcwill catch all types.
+//catch block in js can only handle one variable, which is taken as error, which will catch all types.
 
 
 //More practical version of exception handliing handling multiple types of exceptions:

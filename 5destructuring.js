@@ -12,7 +12,7 @@ colors = ["red", "yellow", "green"];
 
 //In object destructuring, we just gotta use keys-> we work with keys, nested or not, doesn't matter.
 
-//2.Renaming variables (obviously, only works for objects, since arrays dont have keys):
+//2.Renaming variables (obviously, only works for objects, since arrays dont have keys): Essentially an alias of key.
 //object destructuring renaming
 const user = { id: 101, username: "dev_runner" };
 const { id: roll_no, username: name , planet='Earth'} = user;
@@ -25,7 +25,7 @@ console.log(planet)
 //For arrays, order matters, as there no keys to pick any order of destructuring.
 
 const settings = { theme: "dark" };
-//const { layout, theme = "grid" } = settings; //u can't reassign it here
+//const { layout, theme = "grid" } = settings; //u can't reassign it here;def val exists to fill in if absent.
 const { theme, layout = "grid" } = settings;
 //const {layout = 'grid',theme} = settings  //correct, we just have to give falback value to undefined-key
 console.log(theme);
