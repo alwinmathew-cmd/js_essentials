@@ -1,0 +1,39 @@
+# DOM Fundamentals & Tree Structure
+
+The Document Object Model (DOM) is an in-memory tree structure 
+created by the browser when it parses your static HTML text file. 
+It translates every HTML tag into a live JavaScript object 
+that can be read, updated, or deleted dynamically.
+
+---
+
+### 1. Objects, Elements, and Nodes
+
+* **Object:** In JavaScript, an object is a data structure 
+  with properties and methods. In the DOM, every tag on screen 
+  becomes a JS object containing properties (`.value`, `.style`, `.textContent`) 
+  and methods (`.appendChild()`, `.remove()`).
+
+* **Element:** An Element is specifically an HTML tag 
+  represented in the DOM (e.g., `<div>`, `<p>`, `<form>`, `<input>`).
+
+* **Node:** Node is the generic parent term for *everything* 
+  in the DOM tree. Elements are Element Nodes, raw text is a Text Node, 
+  and comments are Comment Nodes.
+
+> **Rule of thumb:** All Elements are Nodes, but not all Nodes 
+> are Elements (e.g., plain text sitting inside a tag is a Text Node)[cite: 5].
+
+---
+
+### 2. The DOM Tree & Family Relationships
+
+Because HTML tags are nested inside one another, the DOM 
+structures them into a hierarchy called the **DOM Tree**[cite: 5]. 
+We describe relationships between elements using family terms:
+
+```html
+<ul id="users">         <!-- Parent -->
+  <li>Item 1</li>       <!-- Child 1 (Sibling to Child 2) -->
+  <li>Item 2</li>       <!-- Child 2 (Sibling to Child 1) -->
+</ul>
